@@ -1,0 +1,7 @@
+V:/IronLanguages/bin/Debug/ir.exe extconf.rb
+V:/IronLanguages/Languages/Ruby/StdLib/ruby/1.9.1/mkmf.rb:9:in `const_missing': uninitialized constant RbConfig::MAKEFILE_CONFIG (NameError)
+	from V:/IronLanguages/Languages/Ruby/StdLib/ruby/1.9.1/mkmf.rb:9
+	from V:/IronLanguages/Languages/Ruby/StdLib/ruby/1.9.1/rubygems/custom_require.rb:29:in `require'
+	from V:/IronLanguages/Languages/Ruby/StdLib/ruby/1.9.1/rubygems/custom_require.rb:29:in `require'
+	from extconf.rb:5
+

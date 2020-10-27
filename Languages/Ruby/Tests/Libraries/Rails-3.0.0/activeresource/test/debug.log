@@ -1,0 +1,247 @@
+# Logfile created on 2011-03-05 15:00:41 +0000 by logger.rb/25413
+I, [2011-03-05T15:00:44.324808 #4856]  INFO -- : DELETE http://localhost:80/people/2.xml
+I, [2011-03-05T15:00:44.348809 #4856]  INFO -- : --> 200 200 0 (6.0ms)
+I, [2011-03-05T15:00:44.420814 #4856]  INFO -- : GET http://localhost:80/people/2.xml
+I, [2011-03-05T15:00:44.420814 #4856]  INFO -- : --> 200 200 107 (1.0ms)
+I, [2011-03-05T15:00:45.788892 #4856]  INFO -- : HEAD http://localhost:80/people/2.xml
+I, [2011-03-05T15:00:45.789892 #4856]  INFO -- : --> 200 200 0 (4.0ms)
+I, [2011-03-05T15:00:45.846895 #4856]  INFO -- : POST http://localhost:80/people/2/addresses.xml
+I, [2011-03-05T15:00:45.847895 #4856]  INFO -- : --> 201 201 0 (2.0ms)
+I, [2011-03-05T15:00:45.885897 #4856]  INFO -- : PUT http://localhost:80/people/2.xml
+I, [2011-03-05T15:00:45.886897 #4856]  INFO -- : --> 204 204 0 (1.0ms)
+I, [2011-03-05T15:00:45.988903 #4856]  INFO -- : GET http://localhost:80/people/2.xml
+E, [2011-03-05T15:00:45.996904 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.011905 #4856]  INFO -- : POST http://localhost:80/people/2/addresses.xml
+E, [2011-03-05T15:00:46.017905 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.038906 #4856]  INFO -- : PUT http://localhost:80/people/2.xml
+E, [2011-03-05T15:00:46.045907 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.054907 #4856]  INFO -- : DELETE http://localhost:80/people/2.xml
+E, [2011-03-05T15:00:46.059907 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.068908 #4856]  INFO -- : HEAD http://localhost:80/people/2.xml
+E, [2011-03-05T15:00:46.073908 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.112910 #4856]  INFO -- : GET http://localhost:80/people/2.xml
+E, [2011-03-05T15:00:46.117911 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.133912 #4856]  INFO -- : POST http://localhost:80/people/2/addresses.xml
+E, [2011-03-05T15:00:46.139912 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.147912 #4856]  INFO -- : PUT http://localhost:80/people/2.xml
+E, [2011-03-05T15:00:46.153913 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.161913 #4856]  INFO -- : DELETE http://localhost:80/people/2.xml
+E, [2011-03-05T15:00:46.166913 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.176914 #4856]  INFO -- : HEAD http://localhost:80/people/2.xml
+E, [2011-03-05T15:00:46.181914 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:46.213916 #4856]  INFO -- : GET http://localhost:80/people/1.xml
+I, [2011-03-05T15:00:46.214916 #4856]  INFO -- : --> 401 401 0 (1.0ms)
+I, [2011-03-05T15:00:47.165971 #4856]  INFO -- : GET http://localhost:80/people/1.xml
+I, [2011-03-05T15:00:47.170971 #4856]  INFO -- : --> 200 200 106 (12.0ms)
+I, [2011-03-05T15:00:47.299978 #4856]  INFO -- : DELETE http://localhost:80/people/1.xml
+I, [2011-03-05T15:00:47.302978 #4856]  INFO -- : --> 200 200 0 (1.0ms)
+I, [2011-03-05T15:00:47.327980 #4856]  INFO -- : DELETE http://localhost:80/people/2.xml
+I, [2011-03-05T15:00:47.327980 #4856]  INFO -- : --> 200 200 0 (0.0ms)
+I, [2011-03-05T15:00:47.346981 #4856]  INFO -- : GET http://localhost:80/people/1.xml
+I, [2011-03-05T15:00:47.347981 #4856]  INFO -- : --> 200 200 106 (0.0ms)
+I, [2011-03-05T15:00:47.416985 #4856]  INFO -- : GET http://localhost:80/people.xml
+I, [2011-03-05T15:00:47.417985 #4856]  INFO -- : --> 200 200 222 (0.0ms)
+I, [2011-03-05T15:00:47.509990 #4856]  INFO -- : GET http://localhost:80/people_empty_elements.xml
+I, [2011-03-05T15:00:47.510990 #4856]  INFO -- : --> 200 200 77 (0.0ms)
+I, [2011-03-05T15:00:47.550993 #4856]  INFO -- : GET http://localhost:80/people_single_elements.xml
+I, [2011-03-05T15:00:47.551993 #4856]  INFO -- : --> 200 200 208 (0.0ms)
+I, [2011-03-05T15:00:47.604996 #4856]  INFO -- : GET http://localhost:80/people/2.xml
+I, [2011-03-05T15:00:47.605996 #4856]  INFO -- : --> 200 200 107 (0.0ms)
+I, [2011-03-05T15:00:47.773005 #4856]  INFO -- : HEAD http://localhost:80/people/1.xml
+I, [2011-03-05T15:00:47.774005 #4856]  INFO -- : --> 200 200 0 (0.0ms)
+I, [2011-03-05T15:00:47.825008 #4856]  INFO -- : POST http://localhost:80/people.xml
+I, [2011-03-05T15:00:47.825008 #4856]  INFO -- : --> 201 201 0 (0.0ms)
+I, [2011-03-05T15:00:47.851010 #4856]  INFO -- : POST http://localhost:80/members.xml
+I, [2011-03-05T15:00:47.851010 #4856]  INFO -- : --> 201 201 16 (0.0ms)
+I, [2011-03-05T15:00:47.895012 #4856]  INFO -- : PUT http://localhost:80/people/1.xml
+I, [2011-03-05T15:00:47.895012 #4856]  INFO -- : --> 204 204 0 (1.0ms)
+I, [2011-03-05T15:00:47.929014 #4856]  INFO -- : PUT http://localhost:80/people/2.xml
+I, [2011-03-05T15:00:47.929014 #4856]  INFO -- : --> 204 204 0 (0.0ms)
+I, [2011-03-05T15:00:48.070022 #4856]  INFO -- : GET http://localhost:80/people/1.xml
+E, [2011-03-05T15:00:48.075023 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:48.167028 #4856]  INFO -- : GET http://localhost:80/people_timeout.xml
+E, [2011-03-05T15:00:48.172028 #4856] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-05T15:00:48.298035 #4856]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-05T15:00:48.298035 #4856]  INFO -- : --> 200 200 166 (0.0ms)
+I, [2011-03-05T15:00:48.386040 #4856]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-05T15:00:48.386040 #4856]  INFO -- : --> 200 200 166 (1.0ms)
+I, [2011-03-05T15:00:48.495047 #4856]  INFO -- : GET http://37s.sunrise.i:3000/people/2/addresses.xml
+I, [2011-03-05T15:00:48.497047 #4856]  INFO -- : --> 404 404 0 (2.0ms)
+I, [2011-03-05T15:00:48.534049 #4856]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses/1.xml
+I, [2011-03-05T15:00:48.535049 #4856]  INFO -- : --> 200 200 120 (0.0ms)
+I, [2011-03-05T15:00:48.595052 #4856]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-05T15:00:48.595052 #4856]  INFO -- : --> 200 200 166 (0.0ms)
+I, [2011-03-05T15:00:48.648055 #4856]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-05T15:00:48.649055 #4856]  INFO -- : --> 200 200 166 (0.0ms)
+I, [2011-03-05T15:00:50.099138 #4856]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-05T15:00:50.099138 #4856]  INFO -- : --> 201 201 123 (1.0ms)
+I, [2011-03-05T15:00:50.325151 #4856]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-05T15:00:50.325151 #4856]  INFO -- : --> 201 201 123 (1.0ms)
+I, [2011-03-05T15:00:50.376154 #4856]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-05T15:00:50.377154 #4856]  INFO -- : --> 201 201 123 (1.0ms)
+I, [2011-03-05T15:00:50.527163 #4856]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-05T15:00:50.528163 #4856]  INFO -- : --> 201 201 123 (0.0ms)
+I, [2011-03-06T08:25:42.648947 #6840]  INFO -- : DELETE http://localhost:80/people/2.xml
+I, [2011-03-06T08:25:42.703950 #6840]  INFO -- : --> 200 200 0 (7.0ms)
+I, [2011-03-06T08:25:42.756953 #6840]  INFO -- : GET http://localhost:80/people/2.xml
+I, [2011-03-06T08:25:42.756953 #6840]  INFO -- : --> 200 200 107 (1.0ms)
+I, [2011-03-06T08:25:44.120031 #6840]  INFO -- : HEAD http://localhost:80/people/2.xml
+I, [2011-03-06T08:25:44.121031 #6840]  INFO -- : --> 200 200 0 (1.0ms)
+I, [2011-03-06T08:25:44.170034 #6840]  INFO -- : POST http://localhost:80/people/2/addresses.xml
+I, [2011-03-06T08:25:44.171034 #6840]  INFO -- : --> 201 201 0 (2.0ms)
+I, [2011-03-06T08:25:44.204036 #6840]  INFO -- : PUT http://localhost:80/people/2.xml
+I, [2011-03-06T08:25:44.204036 #6840]  INFO -- : --> 204 204 0 (1.0ms)
+I, [2011-03-06T08:25:44.307042 #6840]  INFO -- : GET http://localhost:80/people/2.xml
+E, [2011-03-06T08:25:44.315042 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.332043 #6840]  INFO -- : POST http://localhost:80/people/2/addresses.xml
+E, [2011-03-06T08:25:44.337044 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.346044 #6840]  INFO -- : PUT http://localhost:80/people/2.xml
+E, [2011-03-06T08:25:44.353045 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.363045 #6840]  INFO -- : DELETE http://localhost:80/people/2.xml
+E, [2011-03-06T08:25:44.369046 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.389047 #6840]  INFO -- : HEAD http://localhost:80/people/2.xml
+E, [2011-03-06T08:25:44.394047 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.428049 #6840]  INFO -- : GET http://localhost:80/people/2.xml
+E, [2011-03-06T08:25:44.433049 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.441050 #6840]  INFO -- : POST http://localhost:80/people/2/addresses.xml
+E, [2011-03-06T08:25:44.446050 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.454050 #6840]  INFO -- : PUT http://localhost:80/people/2.xml
+E, [2011-03-06T08:25:44.459051 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.468051 #6840]  INFO -- : DELETE http://localhost:80/people/2.xml
+E, [2011-03-06T08:25:44.473051 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.490052 #6840]  INFO -- : HEAD http://localhost:80/people/2.xml
+E, [2011-03-06T08:25:44.495053 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:44.523054 #6840]  INFO -- : GET http://localhost:80/people/1.xml
+I, [2011-03-06T08:25:44.524054 #6840]  INFO -- : --> 401 401 0 (1.0ms)
+I, [2011-03-06T08:25:45.449107 #6840]  INFO -- : GET http://localhost:80/people/1.xml
+I, [2011-03-06T08:25:45.450107 #6840]  INFO -- : --> 200 200 106 (11.0ms)
+I, [2011-03-06T08:25:45.578115 #6840]  INFO -- : DELETE http://localhost:80/people/1.xml
+I, [2011-03-06T08:25:45.583115 #6840]  INFO -- : --> 200 200 0 (1.0ms)
+I, [2011-03-06T08:25:45.606116 #6840]  INFO -- : DELETE http://localhost:80/people/2.xml
+I, [2011-03-06T08:25:45.606116 #6840]  INFO -- : --> 200 200 0 (0.0ms)
+I, [2011-03-06T08:25:45.626117 #6840]  INFO -- : GET http://localhost:80/people/1.xml
+I, [2011-03-06T08:25:45.626117 #6840]  INFO -- : --> 200 200 106 (0.0ms)
+I, [2011-03-06T08:25:45.698122 #6840]  INFO -- : GET http://localhost:80/people.xml
+I, [2011-03-06T08:25:45.698122 #6840]  INFO -- : --> 200 200 222 (0.0ms)
+I, [2011-03-06T08:25:45.772126 #6840]  INFO -- : GET http://localhost:80/people_empty_elements.xml
+I, [2011-03-06T08:25:45.772126 #6840]  INFO -- : --> 200 200 77 (1.0ms)
+I, [2011-03-06T08:25:45.824129 #6840]  INFO -- : GET http://localhost:80/people_single_elements.xml
+I, [2011-03-06T08:25:45.825129 #6840]  INFO -- : --> 200 200 208 (0.0ms)
+I, [2011-03-06T08:25:45.876132 #6840]  INFO -- : GET http://localhost:80/people/2.xml
+I, [2011-03-06T08:25:45.876132 #6840]  INFO -- : --> 200 200 107 (0.0ms)
+I, [2011-03-06T08:25:46.044141 #6840]  INFO -- : HEAD http://localhost:80/people/1.xml
+I, [2011-03-06T08:25:46.045141 #6840]  INFO -- : --> 200 200 0 (1.0ms)
+I, [2011-03-06T08:25:46.097144 #6840]  INFO -- : POST http://localhost:80/people.xml
+I, [2011-03-06T08:25:46.098144 #6840]  INFO -- : --> 201 201 0 (0.0ms)
+I, [2011-03-06T08:25:46.119146 #6840]  INFO -- : POST http://localhost:80/members.xml
+I, [2011-03-06T08:25:46.119146 #6840]  INFO -- : --> 201 201 16 (0.0ms)
+I, [2011-03-06T08:25:46.176149 #6840]  INFO -- : PUT http://localhost:80/people/1.xml
+I, [2011-03-06T08:25:46.177149 #6840]  INFO -- : --> 204 204 0 (0.0ms)
+I, [2011-03-06T08:25:46.194150 #6840]  INFO -- : PUT http://localhost:80/people/2.xml
+I, [2011-03-06T08:25:46.195150 #6840]  INFO -- : --> 204 204 0 (0.0ms)
+I, [2011-03-06T08:25:46.357159 #6840]  INFO -- : GET http://localhost:80/people/1.xml
+E, [2011-03-06T08:25:46.363160 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:46.452165 #6840]  INFO -- : GET http://localhost:80/people_timeout.xml
+E, [2011-03-06T08:25:46.457165 #6840] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T08:25:46.574172 #6840]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-06T08:25:46.575172 #6840]  INFO -- : --> 200 200 166 (0.0ms)
+I, [2011-03-06T08:25:46.646176 #6840]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-06T08:25:46.647176 #6840]  INFO -- : --> 200 200 166 (0.0ms)
+I, [2011-03-06T08:25:46.733181 #6840]  INFO -- : GET http://37s.sunrise.i:3000/people/2/addresses.xml
+I, [2011-03-06T08:25:46.736181 #6840]  INFO -- : --> 404 404 0 (3.0ms)
+I, [2011-03-06T08:25:46.772183 #6840]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses/1.xml
+I, [2011-03-06T08:25:46.773183 #6840]  INFO -- : --> 200 200 120 (0.0ms)
+I, [2011-03-06T08:25:46.833186 #6840]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-06T08:25:46.833186 #6840]  INFO -- : --> 200 200 166 (1.0ms)
+I, [2011-03-06T08:25:46.906191 #6840]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-06T08:25:46.906191 #6840]  INFO -- : --> 200 200 166 (0.0ms)
+I, [2011-03-06T08:25:48.372274 #6840]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-06T08:25:48.372274 #6840]  INFO -- : --> 201 201 123 (1.0ms)
+I, [2011-03-06T08:25:48.600288 #6840]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-06T08:25:48.600288 #6840]  INFO -- : --> 201 201 123 (0.0ms)
+I, [2011-03-06T08:25:48.651290 #6840]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-06T08:25:48.652290 #6840]  INFO -- : --> 201 201 123 (0.0ms)
+I, [2011-03-06T08:25:48.807299 #6840]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-06T08:25:48.808299 #6840]  INFO -- : --> 201 201 123 (0.0ms)
+I, [2011-03-06T09:06:21.183423 #4060]  INFO -- : DELETE http://localhost:80/people/2.xml
+I, [2011-03-06T09:06:21.247427 #4060]  INFO -- : --> 200 200 0 (7.0ms)
+I, [2011-03-06T09:06:21.318431 #4060]  INFO -- : GET http://localhost:80/people/2.xml
+I, [2011-03-06T09:06:21.319431 #4060]  INFO -- : --> 200 200 107 (1.0ms)
+I, [2011-03-06T09:06:22.694510 #4060]  INFO -- : HEAD http://localhost:80/people/2.xml
+I, [2011-03-06T09:06:22.695510 #4060]  INFO -- : --> 200 200 0 (2.0ms)
+I, [2011-03-06T09:06:22.745513 #4060]  INFO -- : POST http://localhost:80/people/2/addresses.xml
+I, [2011-03-06T09:06:22.745513 #4060]  INFO -- : --> 201 201 0 (2.0ms)
+I, [2011-03-06T09:06:22.777514 #4060]  INFO -- : PUT http://localhost:80/people/2.xml
+I, [2011-03-06T09:06:22.778515 #4060]  INFO -- : --> 204 204 0 (1.0ms)
+I, [2011-03-06T09:06:22.881520 #4060]  INFO -- : GET http://localhost:80/people/2.xml
+E, [2011-03-06T09:06:22.889521 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:22.904522 #4060]  INFO -- : POST http://localhost:80/people/2/addresses.xml
+E, [2011-03-06T09:06:22.909522 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:22.919523 #4060]  INFO -- : PUT http://localhost:80/people/2.xml
+E, [2011-03-06T09:06:22.926523 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:22.935524 #4060]  INFO -- : DELETE http://localhost:80/people/2.xml
+E, [2011-03-06T09:06:22.940524 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:22.949524 #4060]  INFO -- : HEAD http://localhost:80/people/2.xml
+E, [2011-03-06T09:06:22.955525 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:22.999527 #4060]  INFO -- : GET http://localhost:80/people/2.xml
+E, [2011-03-06T09:06:23.005528 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:23.013528 #4060]  INFO -- : POST http://localhost:80/people/2/addresses.xml
+E, [2011-03-06T09:06:23.018528 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:23.027529 #4060]  INFO -- : PUT http://localhost:80/people/2.xml
+E, [2011-03-06T09:06:23.032529 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:23.041530 #4060]  INFO -- : DELETE http://localhost:80/people/2.xml
+E, [2011-03-06T09:06:23.046530 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:23.055530 #4060]  INFO -- : HEAD http://localhost:80/people/2.xml
+E, [2011-03-06T09:06:23.060531 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:23.099533 #4060]  INFO -- : GET http://localhost:80/people/1.xml
+I, [2011-03-06T09:06:23.100533 #4060]  INFO -- : --> 401 401 0 (1.0ms)
+I, [2011-03-06T09:06:24.062588 #4060]  INFO -- : GET http://localhost:80/people/1.xml
+I, [2011-03-06T09:06:24.063588 #4060]  INFO -- : --> 200 200 106 (11.0ms)
+I, [2011-03-06T09:06:24.194596 #4060]  INFO -- : DELETE http://localhost:80/people/1.xml
+I, [2011-03-06T09:06:24.199596 #4060]  INFO -- : --> 200 200 0 (1.0ms)
+I, [2011-03-06T09:06:24.218597 #4060]  INFO -- : DELETE http://localhost:80/people/2.xml
+I, [2011-03-06T09:06:24.219597 #4060]  INFO -- : --> 200 200 0 (0.0ms)
+I, [2011-03-06T09:06:24.237598 #4060]  INFO -- : GET http://localhost:80/people/1.xml
+I, [2011-03-06T09:06:24.237598 #4060]  INFO -- : --> 200 200 106 (0.0ms)
+I, [2011-03-06T09:06:24.298601 #4060]  INFO -- : GET http://localhost:80/people.xml
+I, [2011-03-06T09:06:24.298601 #4060]  INFO -- : --> 200 200 222 (1.0ms)
+I, [2011-03-06T09:06:24.379606 #4060]  INFO -- : GET http://localhost:80/people_empty_elements.xml
+I, [2011-03-06T09:06:24.380606 #4060]  INFO -- : --> 200 200 77 (0.0ms)
+I, [2011-03-06T09:06:24.428609 #4060]  INFO -- : GET http://localhost:80/people_single_elements.xml
+I, [2011-03-06T09:06:24.429609 #4060]  INFO -- : --> 200 200 208 (0.0ms)
+I, [2011-03-06T09:06:24.471611 #4060]  INFO -- : GET http://localhost:80/people/2.xml
+I, [2011-03-06T09:06:24.471611 #4060]  INFO -- : --> 200 200 107 (0.0ms)
+I, [2011-03-06T09:06:24.654622 #4060]  INFO -- : HEAD http://localhost:80/people/1.xml
+I, [2011-03-06T09:06:24.654622 #4060]  INFO -- : --> 200 200 0 (1.0ms)
+I, [2011-03-06T09:06:24.700624 #4060]  INFO -- : POST http://localhost:80/people.xml
+I, [2011-03-06T09:06:24.700624 #4060]  INFO -- : --> 201 201 0 (0.0ms)
+I, [2011-03-06T09:06:24.735626 #4060]  INFO -- : POST http://localhost:80/members.xml
+I, [2011-03-06T09:06:24.736627 #4060]  INFO -- : --> 201 201 16 (0.0ms)
+I, [2011-03-06T09:06:24.778629 #4060]  INFO -- : PUT http://localhost:80/people/1.xml
+I, [2011-03-06T09:06:24.779629 #4060]  INFO -- : --> 204 204 0 (0.0ms)
+I, [2011-03-06T09:06:24.801630 #4060]  INFO -- : PUT http://localhost:80/people/2.xml
+I, [2011-03-06T09:06:24.801630 #4060]  INFO -- : --> 204 204 0 (1.0ms)
+I, [2011-03-06T09:06:24.937638 #4060]  INFO -- : GET http://localhost:80/people/1.xml
+E, [2011-03-06T09:06:24.950639 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:25.033644 #4060]  INFO -- : GET http://localhost:80/people_timeout.xml
+E, [2011-03-06T09:06:25.038644 #4060] ERROR -- : Could not log "request.active_resource" event. NoMethodError: undefined method `code' for nil:NilClass
+I, [2011-03-06T09:06:25.157651 #4060]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-06T09:06:25.158651 #4060]  INFO -- : --> 200 200 166 (0.0ms)
+I, [2011-03-06T09:06:25.241655 #4060]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-06T09:06:25.242655 #4060]  INFO -- : --> 200 200 166 (0.0ms)
+I, [2011-03-06T09:06:25.351662 #4060]  INFO -- : GET http://37s.sunrise.i:3000/people/2/addresses.xml
+I, [2011-03-06T09:06:25.353662 #4060]  INFO -- : --> 404 404 0 (2.0ms)
+I, [2011-03-06T09:06:25.389664 #4060]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses/1.xml
+I, [2011-03-06T09:06:25.390664 #4060]  INFO -- : --> 200 200 120 (0.0ms)
+I, [2011-03-06T09:06:25.451667 #4060]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-06T09:06:25.452668 #4060]  INFO -- : --> 200 200 166 (0.0ms)
+I, [2011-03-06T09:06:25.510671 #4060]  INFO -- : GET http://37s.sunrise.i:3000/people/1/addresses.xml
+I, [2011-03-06T09:06:25.510671 #4060]  INFO -- : --> 200 200 166 (1.0ms)
+I, [2011-03-06T09:06:26.967754 #4060]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-06T09:06:26.967754 #4060]  INFO -- : --> 201 201 123 (1.0ms)
+I, [2011-03-06T09:06:27.191767 #4060]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-06T09:06:27.192767 #4060]  INFO -- : --> 201 201 123 (0.0ms)
+I, [2011-03-06T09:06:27.243770 #4060]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-06T09:06:27.243770 #4060]  INFO -- : --> 201 201 123 (0.0ms)
+I, [2011-03-06T09:06:27.398779 #4060]  INFO -- : POST http://37s.sunrise.i:3000/projects.xml
+I, [2011-03-06T09:06:27.399779 #4060]  INFO -- : --> 201 201 123 (0.0ms)

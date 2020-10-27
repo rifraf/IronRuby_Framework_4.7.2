@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: roxml.rb [roxml-1.0 Documentation]</title>
+
+	<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file file-popup">
+	<div id="metadata">
+		<dl>
+			<dt class="modified-date">Last Modified</dt>
+			<dd class="modified-date">2011-03-07 20:26:31 +0000</dd>
+
+			
+			<dt class="requires">Requires</dt>
+			<dd class="requires">
+				<ul>
+				
+					<li>rexml/document</li>
+				
+					<li>iconv</li>
+				
+				</ul>
+			</dd>
+			
+
+			
+		</dl>
+	</div>
+
+	<div id="documentation">
+		
+		<div class="description">
+			<h2>Description</h2>
+			<p>
+<a href="../ROXML.html">ROXML</a> Ruby Object to XML mapping library. For
+more information visit <a
+href="http://roxml.rubyforge.org">roxml.rubyforge.org</a>
+</p>
+<p>
+Copyright &#169; 2004-2006 Zak Mandhro and Anders Engstrom
+</p>
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+&#8220;Software&#8221;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+</p>
+<p>
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</p>
+<p>
+THE SOFTWARE IS PROVIDED &#8220;AS IS&#8221;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+</p>
+<h1>Quick Start Guide</h1>
+<p>
+This is a short usage example. See <a
+href="../ROXML/ROXML_Class.html">ROXML::ROXML_Class</a> and packaged test
+cases for more information.
+</p>
+<p>
+Consider an XML document representing a Library containing a number of
+Books. You can map this structure to Ruby classes that provide addition
+useful behavior. With <a href="../ROXML.html">ROXML</a>, you can annotate
+the Ruby classes as follows:
+</p>
+<pre>
+  class Book
+      include ROXML
+
+      xml_attribute :isbn, &quot;ISBN&quot;
+      xml_text :title
+      xml_text :description, nil, ROXML::TAG_CDATA
+      xml_text :author
+  end
+
+  class Library
+      include ROXML
+
+      xml_text :name, &quot;NAME&quot;, ROXML::TAG_CDATA
+      xml_object :books, Book, ROXML::TAG_ARRAY, &quot;books&quot;
+  end
+</pre>
+<p>
+To create a library and put a number of books in it we could run the
+following code:
+</p>
+<pre>
+  book = Book.new()
+  book.isbn = &quot;0201710897&quot;
+  book.title = &quot;The PickAxe&quot;
+  book.description = &quot;Best Ruby book out there!&quot;
+  book.author = &quot;David Thomas, Andrew Hunt, Dave Thomas&quot;
+
+  lib = Library.new()
+  lib.name = &quot;Favorite Books&quot;
+  lib &lt;&lt; book
+</pre>
+<p>
+To save this information to an XML file:
+</p>
+<pre>
+  File.open(&quot;library.xml&quot;, &quot;w&quot;) do |f|
+      lib.to_xml.write(f, 0)
+  end
+</pre>
+<p>
+To later populate the library object from the XML file:
+</p>
+<pre>
+  lib = Library.parse(File.read(&quot;library.xml&quot;))
+</pre>
+<p>
+Similarly, to do a one-to-one mapping between XML objects, such as book and
+publisher, you would use the <b>xml_object</b> annotation. For example:
+</p>
+<pre>
+      &lt;book isbn=&quot;0974514055&quot;&gt;
+        &lt;title&gt;Programming Ruby - 2nd Edition&lt;/title&gt;
+        &lt;description&gt;Second edition of the great book.&lt;/description&gt;
+        &lt;publisher&gt;
+           &lt;name&gt;Pragmatic Bookshelf&lt;/name&gt;
+        &lt;/publisher&gt;
+      &lt;/book&gt;
+</pre>
+<p>
+can be mapped using the following code:
+</p>
+<pre>
+      class BookWithPublisher
+      include ROXML
+
+          xml_name :book
+          xml_object :publisher, Publisher
+      end
+</pre>
+<p>
+Note: In the above example, <em>xml_name</em> annotation tells <a
+href="../ROXML.html">ROXML</a> to set the element name to
+&#8220;book&#8221; for mapping to XML. The default is XML element name is
+the class name in lowercase; &#8220;bookwithpublisher&#8221; in this case.
+</p>
+<p>
+For more information on available annotations, see <a
+href="../ROXML/ROXML_Class.html">ROXML::ROXML_Class</a>
+</p>
+
+		</div>
+		
+	</div>
+</body>
+</html>
+

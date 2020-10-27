@@ -1,0 +1,53 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Console`0" priority="1" />
+      <Item value="pattern" priority="0" />
+      <Item value="strPattern" priority="0" />
+      <Item value="IDebuggableGenerator`0" priority="0" />
+      <Item value="System" priority="0" />
+      <Item value="Environment`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="7F6984B4-EE6D-4E6F-ABB1-E210D7DC4FDD/d:Runtime/f:RubyContext.cs" caret="2404" fromTop="25" />
+      <File id="7F6984B4-EE6D-4E6F-ABB1-E210D7DC4FDD/f:Ruby.cs" caret="1395" fromTop="0" />
+      <File id="7F6984B4-EE6D-4E6F-ABB1-E210D7DC4FDD/f:RubyCompatibility.cs" caret="0" fromTop="0" />
+      <File id="D6AB587D-A888-4B98-85AC-F15E36F53838/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="D6AB587D-A888-4B98-85AC-F15E36F53838/f:App.config/l:..?..?..?Config?Unsigned?App.config" caret="0" fromTop="0" />
+      <File id="D6AB587D-A888-4B98-85AC-F15E36F53838/f:Program.cs" caret="2795" fromTop="25" />
+      <File id="77323B06-15A2-4CF4-8A7A-86EAA2B66498/d:Builtins/f:Dir.cs" caret="8626" fromTop="33" />
+      <File id="7F6984B4-EE6D-4E6F-ABB1-E210D7DC4FDD/d:Builtins/f:Glob.cs" caret="22003" fromTop="26" />
+      <File id="77323B06-15A2-4CF4-8A7A-86EAA2B66498/d:Socket/f:TCPSocket.cs" caret="746" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="77323B06-15A2-4CF4-8A7A-86EAA2B66498/d:Builtins/f:Dir.cs" caret="8096" fromTop="22" />
+      <File id="7F6984B4-EE6D-4E6F-ABB1-E210D7DC4FDD/d:Builtins/f:Glob.cs" caret="21185" fromTop="11" />
+      <File id="7F6984B4-EE6D-4E6F-ABB1-E210D7DC4FDD/d:Builtins/f:Glob.cs" caret="18426" fromTop="25" />
+      <File id="7F6984B4-EE6D-4E6F-ABB1-E210D7DC4FDD/d:Builtins/f:Glob.cs" caret="19039" fromTop="38" />
+      <File id="7F6984B4-EE6D-4E6F-ABB1-E210D7DC4FDD/d:Builtins/f:Glob.cs" caret="22003" fromTop="26" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

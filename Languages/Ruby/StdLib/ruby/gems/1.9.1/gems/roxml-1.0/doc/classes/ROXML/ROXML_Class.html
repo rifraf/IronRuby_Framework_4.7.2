@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: ROXML::ROXML_Class</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">ROXML::ROXML_Class</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../files/lib/roxml_rb.html">
+                lib/roxml.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+This class defines the annotation methods that are mixed into your Ruby
+classes for XML mapping information and behavior.
+</p>
+<p>
+See <a href="ROXML_Class.html#M000007">xml_name</a>, <a
+href="ROXML_Class.html#M000009">xml_text</a>, <a
+href="ROXML_Class.html#M000008">xml_attribute</a> and <a
+href="ROXML_Class.html#M000010">xml_object</a> for available annotations.
+</p>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000006">parse</a>&nbsp;&nbsp;
+      <a href="#M000011">tag_name</a>&nbsp;&nbsp;
+      <a href="#M000012">tag_refs</a>&nbsp;&nbsp;
+      <a href="#M000008">xml_attribute</a>&nbsp;&nbsp;
+      <a href="#M000007">xml_name</a>&nbsp;&nbsp;
+      <a href="#M000010">xml_object</a>&nbsp;&nbsp;
+      <a href="#M000009">xml_text</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000006" class="method-detail">
+        <a name="M000006"></a>
+
+        <div class="method-heading">
+          <a href="ROXML_Class.src/M000006.html" target="Code" class="method-signature"
+            onclick="popupCode('ROXML_Class.src/M000006.html');return false;">
+          <span class="method-name">parse</span><span class="method-args">(data)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Creates a new Ruby object from XML using mapping information annotated in
+the class.
+</p>
+<p>
+The input data is either a REXML::Element or a <a
+href="../String.html">String</a> representing the XML document.
+</p>
+<p>
+Example
+</p>
+<pre>
+  book = Book.parse(File.read(&quot;book.xml&quot;))
+</pre>
+<p>
+or
+</p>
+<pre>
+  book = Book.parse(&quot;&lt;book&gt;&lt;name&gt;Beyond Java&lt;/name&gt;&lt;/book&gt;&quot;)
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000011" class="method-detail">
+        <a name="M000011"></a>
+
+        <div class="method-heading">
+          <a href="ROXML_Class.src/M000011.html" target="Code" class="method-signature"
+            onclick="popupCode('ROXML_Class.src/M000011.html');return false;">
+          <span class="method-name">tag_name</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Returns the tag name (also known as <a
+href="ROXML_Class.html#M000007">xml_name</a>) of the class. If no tag name
+is set with <a href="ROXML_Class.html#M000007">xml_name</a> method, returns
+default class name in lowercase.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000012" class="method-detail">
+        <a name="M000012"></a>
+
+        <div class="method-heading">
+          <a href="ROXML_Class.src/M000012.html" target="Code" class="method-signature"
+            onclick="popupCode('ROXML_Class.src/M000012.html');return false;">
+          <span class="method-name">tag_refs</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Returns array of internal reference objects, such as attributes and
+composed XML objects
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000008" class="method-detail">
+        <a name="M000008"></a>
+
+        <div class="method-heading">
+          <a href="ROXML_Class.src/M000008.html" target="Code" class="method-signature"
+            onclick="popupCode('ROXML_Class.src/M000008.html');return false;">
+          <span class="method-name">xml_attribute</span><span class="method-args">(sym, name = nil, options = 0)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Declare an accessor for the included class that should be represented as an
+XML attribute.
+</p>
+<dl>
+<dt>sym</dt><dd>Symbol representing the name of the accessor
+
+</dd>
+<dt>name</dt><dd>An optional name that should be used for the attribute in XML. Default is
+sym.id2name.
+
+</dd>
+<dt>options</dt><dd>Valid options are TAG_READONLY to attribute as read-only
+
+</dd>
+</dl>
+<p>
+Example:
+</p>
+<pre>
+  class Book
+    xml_attribute :isbn, &quot;ISBN&quot;
+  end
+</pre>
+<p>
+To map:
+</p>
+<pre>
+  &lt;book ISBN=&quot;0974514055&quot;&gt;&lt;/book&gt;
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000007" class="method-detail">
+        <a name="M000007"></a>
+
+        <div class="method-heading">
+          <a href="ROXML_Class.src/M000007.html" target="Code" class="method-signature"
+            onclick="popupCode('ROXML_Class.src/M000007.html');return false;">
+          <span class="method-name">xml_name</span><span class="method-args">(name)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the name of the XML element that represents this class. Use this to
+override the default lowercase class name.
+</p>
+<p>
+Example:
+</p>
+<pre>
+  class BookWithPublisher
+    xml_name :book
+  end
+</pre>
+<p>
+Without the <a href="ROXML_Class.html#M000007">xml_name</a> annotation, the
+XML mapped tag would have been &quot;bookwithpublisher&quot;.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000010" class="method-detail">
+        <a name="M000010"></a>
+
+        <div class="method-heading">
+          <a href="ROXML_Class.src/M000010.html" target="Code" class="method-signature"
+            onclick="popupCode('ROXML_Class.src/M000010.html');return false;">
+          <span class="method-name">xml_object</span><span class="method-args">(sym, klass, options = 0, wrapper = nil)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Declares an accessor that represents another <a
+href="../ROXML.html">ROXML</a> class as child XML element (one-to-one or
+composition) or array of child elements (one-to-many or aggregation).
+Default is one-to-one. Use TAG_ARRAY option for one-to-many.
+</p>
+<dl>
+<dt>sym</dt><dd>Symbol representing the name of the accessor.
+
+</dd>
+<dt>name</dt><dd>An optional name that should be used for the attribute in XML. Default is
+sym.id2name.
+
+</dd>
+<dt>options</dt><dd>TAG_ARRAY for one-to-many, and TAG_READONLY for read-only access.
+
+</dd>
+<dt>wrapper</dt><dd>An optional name of a wrapping tag for this XML accessor.
+
+</dd>
+</dl>
+<p>
+Composition example:
+</p>
+<pre>
+      &lt;book&gt;
+        &lt;publisher&gt;
+           &lt;name&gt;Pragmatic Bookshelf&lt;/name&gt;
+        &lt;/publisher&gt;
+      &lt;/book&gt;
+</pre>
+<p>
+Can be mapped using the following code:
+</p>
+<pre>
+      class Book
+          xml_object :publisher, Publisher
+      end
+</pre>
+<p>
+Aggregation example:
+</p>
+<pre>
+  &lt;library&gt;
+    &lt;name&gt;Ruby books&lt;/name&gt;
+    &lt;books&gt;
+      &lt;book/&gt;
+      &lt;book/&gt;
+    &lt;/books&gt;
+  &lt;/library&gt;
+</pre>
+<p>
+Can be mapped using the following code:
+</p>
+<pre>
+  class Library
+      xml_text :name, nil, ROXML::TAG_CDATA
+      xml_object :books, Book, ROXML::TAG_ARRAY, &quot;books&quot;
+  end
+</pre>
+<p>
+If you don&#8217;t have the &lt;books&gt; tag to wrap around the list of
+&lt;book&gt; tags:
+</p>
+<pre>
+  &lt;library&gt;
+    &lt;name&gt;Ruby books&lt;/name&gt;
+    &lt;book/&gt;
+    &lt;book/&gt;
+  &lt;/library&gt;
+</pre>
+<p>
+You can skip the wrapper argument:
+</p>
+<pre>
+      xml_object :books, Book, ROXML::TAG_ARRAY
+</pre>
+        </div>
+      </div>
+
+      <div id="method-M000009" class="method-detail">
+        <a name="M000009"></a>
+
+        <div class="method-heading">
+          <a href="ROXML_Class.src/M000009.html" target="Code" class="method-signature"
+            onclick="popupCode('ROXML_Class.src/M000009.html');return false;">
+          <span class="method-name">xml_text</span><span class="method-args">(sym, name = nil, options = 0, wrapper = nil)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Declares an accessor that represents one or more XML text elements.
+</p>
+<dl>
+<dt>sym</dt><dd>Symbol representing the name of the accessor.
+
+</dd>
+<dt>name</dt><dd>An optional name that should be used for the attribute in XML. Default is
+sym.id2name.
+
+</dd>
+<dt>options</dt><dd>TAG_CDATA for character data, TAG_ARRAY for one-to-many, and TAG_READONLY
+for read-only access.
+
+</dd>
+<dt>wrapper</dt><dd>An optional name of a wrapping tag for this XML accessor.
+
+</dd>
+</dl>
+<p>
+Example:
+</p>
+<pre>
+  class Book
+    xml_text :description, nil, ROXML::TAG_CDATA
+  end
+</pre>
+<p>
+To map:
+</p>
+<pre>
+  &lt;book&gt;
+    &lt;description&gt;&lt;![CDATA[Probably the best Ruby book out there]]&gt;&lt;/description&gt;
+  &lt;/book&gt;
+</pre>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: ROXML::ROXML_Class</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/roxml_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/roxml.rb">lib/roxml.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-add_accessor">#add_accessor</a></li>
+					
+					<li><a href="#method-i-add_ref">#add_ref</a></li>
+					
+					<li><a href="#method-i-assert_accessor">#assert_accessor</a></li>
+					
+					<li><a href="#method-i-parse">#parse</a></li>
+					
+					<li><a href="#method-i-tag_name">#tag_name</a></li>
+					
+					<li><a href="#method-i-tag_refs">#tag_refs</a></li>
+					
+					<li><a href="#method-i-xml_attribute">#xml_attribute</a></li>
+					
+					<li><a href="#method-i-xml_name">#xml_name</a></li>
+					
+					<li><a href="#method-i-xml_object">#xml_object</a></li>
+					
+					<li><a href="#method-i-xml_text">#xml_text</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../ROXML.html">ROXML</a></li>
+				
+					<li><a href="../ROXML/ROXML_Class.html">ROXML::ROXML_Class</a></li>
+				
+					<li><a href="../ROXML/XMLAttributeRef.html">ROXML::XMLAttributeRef</a></li>
+				
+					<li><a href="../ROXML/XMLObjectRef.html">ROXML::XMLObjectRef</a></li>
+				
+					<li><a href="../ROXML/XMLRef.html">ROXML::XMLRef</a></li>
+				
+					<li><a href="../ROXML/XMLTextRef.html">ROXML::XMLTextRef</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">ROXML::ROXML_Class</h1>
+
+		<div id="description">
+			<p>
+This class defines the annotation methods that are mixed into your Ruby
+classes for XML mapping information and behavior.
+</p>
+<p>
+See <a href="ROXML_Class.html#method-i-xml_name">xml_name</a>, <a
+href="ROXML_Class.html#method-i-xml_text">xml_text</a>, <a
+href="ROXML_Class.html#method-i-xml_attribute">xml_attribute</a> and <a
+href="ROXML_Class.html#method-i-xml_object">xml_object</a> for available
+annotations.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="parse-method" class="method-detail ">
+				<a name="method-i-parse"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parse</span><span
+						class="method-args">(data)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new Ruby object from XML using mapping information annotated in
+the class.
+</p>
+<p>
+The input data is either a REXML::Element or a <a
+href="../String.html">String</a> representing the XML document.
+</p>
+<p>
+Example
+</p>
+<pre>
+  book = Book.parse(File.read(&quot;book.xml&quot;))
+</pre>
+<p>
+or
+</p>
+<pre>
+  book = Book.parse(&quot;&lt;book&gt;&lt;name&gt;Beyond Java&lt;/name&gt;&lt;/book&gt;&quot;)</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="parse-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 254</span>
+254:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">data</span>)
+255: 
+256:             <span class="ruby-identifier">xml</span> = (<span class="ruby-identifier">data</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">REXML</span><span class="ruby-operator">::</span><span class="ruby-constant">Element</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">data</span> <span class="ruby-operator">:</span> <span class="ruby-constant">REXML</span><span class="ruby-operator">::</span><span class="ruby-constant">Document</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">data</span>).<span class="ruby-identifier">root</span>)
+257:             
+258:             <span class="ruby-identifier">inst</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">allocate</span>
+259: 
+260:             <span class="ruby-identifier">tag_refs</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ref</span><span class="ruby-operator">|</span>
+261:                 <span class="ruby-identifier">ref</span>.<span class="ruby-identifier">populate</span>(<span class="ruby-identifier">xml</span>, <span class="ruby-identifier">inst</span>)                
+262:             <span class="ruby-keyword kw">end</span>
+263:         
+264:             <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">inst</span>
+265:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="tag-name-method" class="method-detail ">
+				<a name="method-i-tag_name"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tag_name</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the tag name (also known as <a
+href="ROXML_Class.html#method-i-xml_name">xml_name</a>) of the class. If no
+tag name is set with <a
+href="ROXML_Class.html#method-i-xml_name">xml_name</a> method, returns
+default class name in lowercase.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="tag-name-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 393</span>
+393:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tag_name</span>
+394:             <span class="ruby-ivar">@tag_name</span> <span class="ruby-operator">||</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">name</span>.<span class="ruby-identifier">downcase</span>
+395:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="tag-refs-method" class="method-detail ">
+				<a name="method-i-tag_refs"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tag_refs</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns array of internal reference objects, such as attributes and
+composed XML objects
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="tag-refs-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 399</span>
+399:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tag_refs</span>
+400:             <span class="ruby-ivar">@xml_refs</span> <span class="ruby-operator">||</span> []
+401:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="xml-attribute-method" class="method-detail ">
+				<a name="method-i-xml_attribute"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">xml_attribute</span><span
+						class="method-args">(sym, name = nil, options = 0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Declare an accessor for the included class that should be  represented as
+an XML attribute.
+</p>
+<dl>
+<dt>sym</dt><dd><p>
+Symbol representing the name of the accessor
+</p>
+</dd>
+<dt>name</dt><dd><p>
+An optional name that should be used for the attribute in XML. Default is
+sym.id2name.
+</p>
+</dd>
+<dt>options</dt><dd><p>
+Valid options are TAG_READONLY to attribute as read-only
+</p>
+</dd>
+</dl>
+<p>
+Example:
+</p>
+<pre>
+  class Book
+    xml_attribute :isbn, &quot;ISBN&quot;
+  end
+</pre>
+<p>
+To map:
+</p>
+<pre>
+  &lt;book ISBN=&quot;0974514055&quot;&gt;&lt;/book&gt;
+  </pre>
+					
+
+					
+					<div class="method-source-code"
+						id="xml-attribute-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 298</span>
+298:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">xml_attribute</span>(<span class="ruby-identifier">sym</span>, <span class="ruby-identifier">name</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">options</span> = <span class="ruby-value">0</span>)
+299:             <span class="ruby-identifier">add_ref</span>(<span class="ruby-constant">XMLAttributeRef</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">sym</span>, <span class="ruby-identifier">name</span>))
+300:             <span class="ruby-identifier">add_accessor</span>(<span class="ruby-identifier">sym</span>, (<span class="ruby-constant">TAG_READONLY</span> &amp; <span class="ruby-identifier">options</span> <span class="ruby-operator">!=</span> <span class="ruby-constant">TAG_READONLY</span>))
+301:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="xml-name-method" class="method-detail ">
+				<a name="method-i-xml_name"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">xml_name</span><span
+						class="method-args">(name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Sets the name of the XML element that represents this class. Use this to
+override the default lowercase class name.
+</p>
+<p>
+Example:
+</p>
+<pre>
+  class BookWithPublisher
+    xml_name :book
+  end
+</pre>
+<p>
+Without the <a href="ROXML_Class.html#method-i-xml_name">xml_name</a>
+annotation, the XML mapped tag would have been
+&#8220;bookwithpublisher&#8221;.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="xml-name-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 277</span>
+277:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">xml_name</span>(<span class="ruby-identifier">name</span>)
+278:             <span class="ruby-ivar">@tag_name</span> = <span class="ruby-identifier">name</span>
+279:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="xml-object-method" class="method-detail ">
+				<a name="method-i-xml_object"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">xml_object</span><span
+						class="method-args">(sym, klass, options = 0, wrapper = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Declares an accessor that represents another <a
+href="../ROXML.html">ROXML</a> class as child XML element (one-to-one or
+composition) or array of child elements (one-to-many or aggregation).
+Default is one-to-one. Use TAG_ARRAY option for one-to-many.
+</p>
+<dl>
+<dt>sym</dt><dd><p>
+Symbol representing the name of the accessor.
+</p>
+</dd>
+<dt>name</dt><dd><p>
+An optional name that should be used for the attribute in XML. Default is
+sym.id2name.
+</p>
+</dd>
+<dt>options</dt><dd><p>
+TAG_ARRAY for one-to-many, and TAG_READONLY for read-only access.
+</p>
+</dd>
+<dt>wrapper</dt><dd><p>
+An optional name of a wrapping tag for this XML accessor.
+</p>
+</dd>
+</dl>
+<p>
+Composition example:
+</p>
+<pre>
+      &lt;book&gt;
+        &lt;publisher&gt;
+           &lt;name&gt;Pragmatic Bookshelf&lt;/name&gt;
+        &lt;/publisher&gt;
+      &lt;/book&gt;
+</pre>
+<p>
+Can be mapped using the following code:
+</p>
+<pre>
+      class Book
+          xml_object :publisher, Publisher
+      end
+</pre>
+<p>
+Aggregation example:
+</p>
+<pre>
+  &lt;library&gt;
+    &lt;name&gt;Ruby books&lt;/name&gt;
+    &lt;books&gt;
+      &lt;book/&gt;
+      &lt;book/&gt;
+    &lt;/books&gt;
+  &lt;/library&gt;
+</pre>
+<p>
+Can be mapped using the following code:
+</p>
+<pre>
+  class Library
+      xml_text :name, nil, ROXML::TAG_CDATA
+      xml_object :books, Book, ROXML::TAG_ARRAY, &quot;books&quot;
+  end
+</pre>
+<p>
+If you don&#8217;t have the <books> tag to wrap around the list of <book>
+tags:
+</p>
+<pre>
+  &lt;library&gt;
+    &lt;name&gt;Ruby books&lt;/name&gt;
+    &lt;book/&gt;
+    &lt;book/&gt;
+  &lt;/library&gt;
+</pre>
+<p>
+You can skip the wrapper argument:
+</p>
+<pre>
+      xml_object :books, Book, ROXML::TAG_ARRAY
+      </pre>
+					
+
+					
+					<div class="method-source-code"
+						id="xml-object-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 380</span>
+380:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">xml_object</span>(<span class="ruby-identifier">sym</span>, <span class="ruby-identifier">klass</span>, <span class="ruby-identifier">options</span> = <span class="ruby-value">0</span>, <span class="ruby-identifier">wrapper</span> = <span class="ruby-keyword kw">nil</span>)
+381:             <span class="ruby-identifier">ref</span> = <span class="ruby-constant">XMLObjectRef</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">sym</span>, <span class="ruby-keyword kw">nil</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+382:                 <span class="ruby-identifier">r</span>.<span class="ruby-identifier">array</span> = (<span class="ruby-constant">TAG_ARRAY</span> &amp; <span class="ruby-identifier">options</span> <span class="ruby-operator">==</span> <span class="ruby-constant">TAG_ARRAY</span>)
+383:                 <span class="ruby-identifier">r</span>.<span class="ruby-identifier">wrapper</span> = <span class="ruby-identifier">wrapper</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">wrapper</span>
+384:                 <span class="ruby-identifier">r</span>.<span class="ruby-identifier">klass</span> = <span class="ruby-identifier">klass</span>
+385:             <span class="ruby-keyword kw">end</span>
+386:             <span class="ruby-identifier">add_ref</span>(<span class="ruby-identifier">ref</span>)
+387:             <span class="ruby-identifier">add_accessor</span>(<span class="ruby-identifier">sym</span>, (<span class="ruby-constant">TAG_READONLY</span> &amp; <span class="ruby-identifier">options</span> <span class="ruby-operator">!=</span> <span class="ruby-constant">TAG_READONLY</span>), <span class="ruby-identifier">ref</span>.<span class="ruby-identifier">array</span>)
+388:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="xml-text-method" class="method-detail ">
+				<a name="method-i-xml_text"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">xml_text</span><span
+						class="method-args">(sym, name = nil, options = 0, wrapper = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Declares an accessor that represents one or more XML text elements.
+</p>
+<dl>
+<dt>sym</dt><dd><p>
+Symbol representing the name of the accessor.
+</p>
+</dd>
+<dt>name</dt><dd><p>
+An optional name that should be used for the attribute in XML. Default is
+sym.id2name.
+</p>
+</dd>
+<dt>options</dt><dd><p>
+TAG_CDATA for character data, TAG_ARRAY for one-to-many, and TAG_READONLY
+for read-only access.
+</p>
+</dd>
+<dt>wrapper</dt><dd><p>
+An optional name of a wrapping tag for this XML accessor.
+</p>
+</dd>
+</dl>
+<p>
+Example:
+</p>
+<pre>
+  class Book
+    xml_text :description, nil, ROXML::TAG_CDATA
+  end
+</pre>
+<p>
+To map:
+</p>
+<pre>
+  &lt;book&gt;
+    &lt;description&gt;&lt;![CDATA[Probably the best Ruby book out there]]&gt;&lt;/description&gt;
+  &lt;/book&gt;</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="xml-text-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 322</span>
+322:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">xml_text</span>(<span class="ruby-identifier">sym</span>, <span class="ruby-identifier">name</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">options</span> = <span class="ruby-value">0</span>, <span class="ruby-identifier">wrapper</span> = <span class="ruby-keyword kw">nil</span>)
+323:             <span class="ruby-identifier">ref</span> = <span class="ruby-constant">XMLTextRef</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">sym</span>, <span class="ruby-identifier">name</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+324:                 <span class="ruby-identifier">r</span>.<span class="ruby-identifier">cdata</span> = (<span class="ruby-constant">TAG_CDATA</span> &amp; <span class="ruby-identifier">options</span> <span class="ruby-operator">==</span> <span class="ruby-constant">TAG_CDATA</span>)
+325:                 <span class="ruby-identifier">r</span>.<span class="ruby-identifier">array</span> = (<span class="ruby-constant">TAG_ARRAY</span> &amp; <span class="ruby-identifier">options</span> <span class="ruby-operator">==</span> <span class="ruby-constant">TAG_ARRAY</span>)
+326:                 <span class="ruby-identifier">r</span>.<span class="ruby-identifier">wrapper</span> = <span class="ruby-identifier">wrapper</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">wrapper</span>
+327:             <span class="ruby-keyword kw">end</span>
+328:             <span class="ruby-identifier">add_ref</span>(<span class="ruby-identifier">ref</span>)
+329:             <span class="ruby-identifier">add_accessor</span>(<span class="ruby-identifier">sym</span>, (<span class="ruby-constant">TAG_READONLY</span> &amp; <span class="ruby-identifier">options</span> <span class="ruby-operator">!=</span> <span class="ruby-constant">TAG_READONLY</span>), <span class="ruby-identifier">ref</span>.<span class="ruby-identifier">array</span>)
+330:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="add-accessor-method" class="method-detail ">
+				<a name="method-i-add_accessor"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add_accessor</span><span
+						class="method-args">(name, writable = true, is_array = false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="add-accessor-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 416</span>
+416:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add_accessor</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">writable</span> = <span class="ruby-keyword kw">true</span>, <span class="ruby-identifier">is_array</span> = <span class="ruby-keyword kw">false</span>)
+417:             <span class="ruby-identifier">assert_accessor</span>(<span class="ruby-identifier">name</span>)
+418:             <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">instance_methods</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">name</span>)
+419:                 <span class="ruby-identifier">define_method</span>(<span class="ruby-identifier">name</span>) <span class="ruby-keyword kw">do</span>
+420:                     <span class="ruby-identifier">val</span> = <span class="ruby-identifier">instance_variable_get</span>(<span class="ruby-node">&quot;@#{name}&quot;</span>)
+421:                     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">val</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">is_array</span>
+422:                         <span class="ruby-identifier">val</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+423:                         <span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-node">&quot;@#{name}&quot;</span>, <span class="ruby-identifier">val</span>)
+424:                     <span class="ruby-keyword kw">end</span>
+425:                     <span class="ruby-identifier">val</span>
+426:                 <span class="ruby-keyword kw">end</span>
+427:             <span class="ruby-keyword kw">end</span>
+428:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">writable</span> 
+429:                 <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">instance_methods</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-node">&quot;#{name}=&quot;</span>)
+430:                     <span class="ruby-identifier">define_method</span>(<span class="ruby-node">&quot;#{name}=&quot;</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+431:                         <span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-node">&quot;@#{name}&quot;</span>, <span class="ruby-identifier">v</span>)
+432:                     <span class="ruby-keyword kw">end</span>
+433:                 <span class="ruby-keyword kw">end</span>
+434:             <span class="ruby-keyword kw">end</span>
+435:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="add-ref-method" class="method-detail ">
+				<a name="method-i-add_ref"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add_ref</span><span
+						class="method-args">(xml_ref)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="add-ref-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 405</span>
+405:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add_ref</span>(<span class="ruby-identifier">xml_ref</span>)
+406:             <span class="ruby-ivar">@xml_refs</span> = [] <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@xml_refs</span>
+407:             <span class="ruby-ivar">@xml_refs</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">xml_ref</span>
+408:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="assert-accessor-method" class="method-detail ">
+				<a name="method-i-assert_accessor"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">assert_accessor</span><span
+						class="method-args">(name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="assert-accessor-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 410</span>
+410:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">assert_accessor</span>(<span class="ruby-identifier">name</span>)
+411:             <span class="ruby-ivar">@tag_accessors</span> = [] <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@tag_accessors</span>
+412:             <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Accessor #{name} is already defined as XML accessor in class #{self}&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@tag_accessors</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">name</span>)
+413:             <span class="ruby-ivar">@tag_accessors</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">name</span>
+414:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: roxml.rb</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>roxml.rb</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>lib/roxml.rb
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Sat Jul 01 14:16:11 EDT 2006</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+<a href="../../classes/ROXML.html">ROXML</a> Ruby Object to XML mapping
+library. For more information visit <a
+href="http://roxml.rubyforge.org">roxml.rubyforge.org</a>
+</p>
+<p>
+Copyright &#169; 2004-2006 Zak Mandhro and Anders Engstrom
+</p>
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+&quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+</p>
+<p>
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</p>
+<p>
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+</p>
+<h1>Quick Start Guide</h1>
+<p>
+This is a short usage example. See <a
+href="../../classes/ROXML/ROXML_Class.html">ROXML::ROXML_Class</a> and
+packaged test cases for more information.
+</p>
+<p>
+Consider an XML document representing a Library containing a number of
+Books. You can map this structure to Ruby classes that provide addition
+useful behavior. With <a href="../../classes/ROXML.html">ROXML</a>, you can
+annotate the Ruby classes as follows:
+</p>
+<pre>
+  class Book
+      include ROXML
+
+      xml_attribute :isbn, &quot;ISBN&quot;
+      xml_text :title
+      xml_text :description, nil, ROXML::TAG_CDATA
+      xml_text :author
+  end
+
+  class Library
+      include ROXML
+
+      xml_text :name, &quot;NAME&quot;, ROXML::TAG_CDATA
+      xml_object :books, Book, ROXML::TAG_ARRAY, &quot;books&quot;
+  end
+</pre>
+<p>
+To create a library and put a number of books in it we could run the
+following code:
+</p>
+<pre>
+  book = Book.new()
+  book.isbn = &quot;0201710897&quot;
+  book.title = &quot;The PickAxe&quot;
+  book.description = &quot;Best Ruby book out there!&quot;
+  book.author = &quot;David Thomas, Andrew Hunt, Dave Thomas&quot;
+
+  lib = Library.new()
+  lib.name = &quot;Favorite Books&quot;
+  lib &lt;&lt; book
+</pre>
+<p>
+To save this information to an XML file:
+</p>
+<pre>
+  File.open(&quot;library.xml&quot;, &quot;w&quot;) do |f|
+      lib.to_xml.write(f, 0)
+  end
+</pre>
+<p>
+To later populate the library object from the XML file:
+</p>
+<pre>
+  lib = Library.parse(File.read(&quot;library.xml&quot;))
+</pre>
+<p>
+Similarly, to do a one-to-one mapping between XML objects, such as book and
+publisher, you would use the <b>xml_object</b> annotation. For example:
+</p>
+<pre>
+      &lt;book isbn=&quot;0974514055&quot;&gt;
+        &lt;title&gt;Programming Ruby - 2nd Edition&lt;/title&gt;
+        &lt;description&gt;Second edition of the great book.&lt;/description&gt;
+        &lt;publisher&gt;
+           &lt;name&gt;Pragmatic Bookshelf&lt;/name&gt;
+        &lt;/publisher&gt;
+      &lt;/book&gt;
+</pre>
+<p>
+can be mapped using the following code:
+</p>
+<pre>
+      class BookWithPublisher
+      include ROXML
+
+          xml_name :book
+          xml_object :publisher, Publisher
+      end
+</pre>
+<p>
+Note: In the above example, <em>xml_name</em> annotation tells <a
+href="../../classes/ROXML.html">ROXML</a> to set the element name to
+&quot;book&quot; for mapping to XML. The default is XML element name is the
+class name in lowercase; &quot;bookwithpublisher&quot; in this case.
+</p>
+<p>
+For more information on available annotations, see <a
+href="../../classes/ROXML/ROXML_Class.html">ROXML::ROXML_Class</a>
+</p>
+
+    </div>
+
+    <div id="requires-list">
+      <h3 class="section-bar">Required files</h3>
+
+      <div class="name-list">
+      rexml/document&nbsp;&nbsp;
+      iconv&nbsp;&nbsp;
+      </div>
+    </div>
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

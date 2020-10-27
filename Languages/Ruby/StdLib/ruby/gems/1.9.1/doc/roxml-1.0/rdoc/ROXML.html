@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: ROXML</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/roxml_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/roxml.rb">lib/roxml.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+			<div id="namespace-list-section" class="section">
+				<h3 class="section-header">Namespace</h3>
+				<ul class="link-list">
+					
+					<li><span class="type">MODULE</span> <a href="ROXML/ROXML_Class.html">ROXML::ROXML_Class</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="ROXML/XMLAttributeRef.html">ROXML::XMLAttributeRef</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="ROXML/XMLObjectRef.html">ROXML::XMLObjectRef</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="ROXML/XMLRef.html">ROXML::XMLRef</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="ROXML/XMLTextRef.html">ROXML::XMLTextRef</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-included">::included</a></li>
+					
+					<li><a href="#method-i-method_missing">#method_missing</a></li>
+					
+					<li><a href="#method-i-to_xml">#to_xml</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./ROXML.html">ROXML</a></li>
+				
+					<li><a href="./ROXML/ROXML_Class.html">ROXML::ROXML_Class</a></li>
+				
+					<li><a href="./ROXML/XMLAttributeRef.html">ROXML::XMLAttributeRef</a></li>
+				
+					<li><a href="./ROXML/XMLObjectRef.html">ROXML::XMLObjectRef</a></li>
+				
+					<li><a href="./ROXML/XMLRef.html">ROXML::XMLRef</a></li>
+				
+					<li><a href="./ROXML/XMLTextRef.html">ROXML::XMLTextRef</a></li>
+				
+					<li><a href="./String.html">String</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">ROXML</h1>
+
+		<div id="description">
+			<p>
+<a href="ROXML.html">ROXML</a> Ruby Object to XML mapping library. For more
+information visit <a
+href="http://roxml.rubyforge.org">roxml.rubyforge.org</a>
+</p>
+<p>
+Copyright &#169; 2004-2006 Zak Mandhro and Anders Engstrom
+</p>
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+&#8220;Software&#8221;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+</p>
+<p>
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</p>
+<p>
+THE SOFTWARE IS PROVIDED &#8220;AS IS&#8221;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+</p>
+<h1>Quick Start Guide</h1>
+<p>
+This is a short usage example. See <a
+href="ROXML/ROXML_Class.html">ROXML::ROXML_Class</a> and packaged test
+cases for more information.
+</p>
+<p>
+Consider an XML document representing a Library containing a number of
+Books. You can map this structure to Ruby classes that provide addition
+useful behavior. With <a href="ROXML.html">ROXML</a>, you can annotate the
+Ruby classes as follows:
+</p>
+<pre>
+  class Book
+      include ROXML
+
+      xml_attribute :isbn, &quot;ISBN&quot;
+      xml_text :title
+      xml_text :description, nil, ROXML::TAG_CDATA
+      xml_text :author
+  end
+
+  class Library
+      include ROXML
+
+      xml_text :name, &quot;NAME&quot;, ROXML::TAG_CDATA
+      xml_object :books, Book, ROXML::TAG_ARRAY, &quot;books&quot;
+  end
+</pre>
+<p>
+To create a library and put a number of books in it we could run the
+following code:
+</p>
+<pre>
+  book = Book.new()
+  book.isbn = &quot;0201710897&quot;
+  book.title = &quot;The PickAxe&quot;
+  book.description = &quot;Best Ruby book out there!&quot;
+  book.author = &quot;David Thomas, Andrew Hunt, Dave Thomas&quot;
+
+  lib = Library.new()
+  lib.name = &quot;Favorite Books&quot;
+  lib &lt;&lt; book
+</pre>
+<p>
+To save this information to an XML file:
+</p>
+<pre>
+  File.open(&quot;library.xml&quot;, &quot;w&quot;) do |f|
+      lib.to_xml.write(f, 0)
+  end
+</pre>
+<p>
+To later populate the library object from the XML file:
+</p>
+<pre>
+  lib = Library.parse(File.read(&quot;library.xml&quot;))
+</pre>
+<p>
+Similarly, to do a one-to-one mapping between XML objects, such as book and
+publisher, you would use the <b>xml_object</b> annotation. For example:
+</p>
+<pre>
+      &lt;book isbn=&quot;0974514055&quot;&gt;
+        &lt;title&gt;Programming Ruby - 2nd Edition&lt;/title&gt;
+        &lt;description&gt;Second edition of the great book.&lt;/description&gt;
+        &lt;publisher&gt;
+           &lt;name&gt;Pragmatic Bookshelf&lt;/name&gt;
+        &lt;/publisher&gt;
+      &lt;/book&gt;
+</pre>
+<p>
+can be mapped using the following code:
+</p>
+<pre>
+      class BookWithPublisher
+      include ROXML
+
+          xml_name :book
+          xml_object :publisher, Publisher
+      end
+</pre>
+<p>
+Note: In the above example, <em>xml_name</em> annotation tells <a
+href="ROXML.html">ROXML</a> to set the element name to &#8220;book&#8221;
+for mapping to XML. The default is XML element name is the class name in
+lowercase; &#8220;bookwithpublisher&#8221; in this case.
+</p>
+<p>
+For more information on available annotations, see <a
+href="ROXML/ROXML_Class.html">ROXML::ROXML_Class</a>
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="TAG_READONLY">TAG_READONLY</a></dt>
+				
+				<dd class="description"><p>
+Option that may be used to declare that  a variable accessor should be
+read-only (no &#8220;accessor=(val)&#8221; is generated).
+</p></dd>
+				
+			
+				<dt><a name="TAG_CDATA">TAG_CDATA</a></dt>
+				
+				<dd class="description"><p>
+Option that declares that an XML text element should be wrapped in a CDATA
+section.
+</p></dd>
+				
+			
+				<dt><a name="TAG_ARRAY">TAG_ARRAY</a></dt>
+				
+				<dd class="description"><p>
+Option that declares an accessor as an array (referencing
+&#8220;many&#8221; items).
+</p></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="included-method" class="method-detail ">
+				<a name="method-c-included"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">included</span><span
+						class="method-args">(klass)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Extends the klass with the <a href="ROXML/ROXML_Class.html">ROXML_Class</a>
+module methods.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="included-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 443</span>
+443:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">included</span>(<span class="ruby-identifier">klass</span>)
+444:             <span class="ruby-keyword kw">super</span>
+445:             <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">__send__</span>(<span class="ruby-value">:extend</span>, <span class="ruby-constant">ROXML_Class</span>)
+446:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="method-missing-method" class="method-detail ">
+				<a name="method-i-method_missing"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">method_missing</span><span
+						class="method-args">(name, *args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+To make it easier to reference the class&#8217;s attributes all method
+calls to the instance that doesn&#8217;t match an instance method are
+forwarded to the class&#8217;s singleton instance. Only methods starting
+with &#8216;tag_&#8217; are delegated.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="method-missing-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 468</span>
+468:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">method_missing</span>(<span class="ruby-identifier">name</span>, *<span class="ruby-identifier">args</span>)
+469:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">name</span>.<span class="ruby-identifier">id2name</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/^tag_/</span>
+470:             <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">__send__</span>(<span class="ruby-identifier">name</span>, *<span class="ruby-identifier">args</span>)
+471:         <span class="ruby-keyword kw">else</span>
+472:             <span class="ruby-keyword kw">super</span>
+473:         <span class="ruby-keyword kw">end</span>
+474:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="to-xml-method" class="method-detail ">
+				<a name="method-i-to_xml"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">to_xml</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns an REXML::Element representing this object.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="to-xml-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/roxml.rb, line 452</span>
+452:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_xml</span>
+453:         <span class="ruby-identifier">root</span> = <span class="ruby-constant">REXML</span><span class="ruby-operator">::</span><span class="ruby-constant">Element</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">tag_name</span>)
+454:         <span class="ruby-identifier">tag_refs</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ref</span><span class="ruby-operator">|</span>
+455:             <span class="ruby-identifier">v</span> = <span class="ruby-identifier">__send__</span>(<span class="ruby-identifier">ref</span>.<span class="ruby-identifier">accessor</span>)
+456:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">v</span>
+457:                 <span class="ruby-identifier">root</span> = <span class="ruby-identifier">ref</span>.<span class="ruby-identifier">update_xml</span>(<span class="ruby-identifier">root</span>, <span class="ruby-identifier">v</span>)
+458:             <span class="ruby-keyword kw">end</span>
+459:         <span class="ruby-keyword kw">end</span>
+460:         <span class="ruby-identifier">root</span>
+461:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

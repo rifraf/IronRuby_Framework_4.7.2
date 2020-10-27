@@ -1,0 +1,840 @@
+
+V:\IronLanguages\Languages\Ruby>"V:\IronLanguages\Util\IronRuby\bin\ir.exe" "V:\IronLanguages\Languages\Ruby\Tests\Scripts\irtests.rb"  
+Building prerequisites ...
+======================================================================
+msbuild /verbosity:minimal V:/IronLanguages/Solutions/Ruby.sln /p:Configuration=Debug 
+======================================================================
+Microsoft (R) Build Engine Version 4.0.30319.1
+[Microsoft .NET Framework, Version 4.0.30319.1]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+  Microsoft.Scripting -> V:\IronLanguages\bin\Debug\Microsoft.Scripting.dll
+  Microsoft.Scripting.Metadata -> V:\IronLanguages\bin\Debug\Microsoft.Scripting.Metadata.dll
+  Microsoft.Dynamic -> V:\IronLanguages\bin\Debug\Microsoft.Dynamic.dll
+  Ruby -> V:\IronLanguages\bin\Debug\IronRuby.dll
+  IronRuby.Libraries -> V:\IronLanguages\bin\Debug\IronRuby.Libraries.dll
+  IronRuby.Tests -> V:\IronLanguages\bin\Debug\IronRuby.Tests.exe
+  Ruby.Console -> V:\IronLanguages\bin\Debug\ir.exe
+  ClassInitGenerator -> V:\IronLanguages\bin\Debug\ClassInitGenerator.exe
+  IronRuby.Libraries.Yaml -> V:\IronLanguages\bin\Debug\IronRuby.Libraries.Yaml.dll
+  Ruby.ConsoleAny -> V:\IronLanguages\bin\Debug\ir64.exe
+  Ruby.WinConsole -> V:\IronLanguages\bin\Debug\irw.exe
+  Ruby.WinConsoleAny -> V:\IronLanguages\bin\Debug\irw64.exe
+
+======================================================================
+msbuild /verbosity:minimal V:/IronLanguages/Solutions/IronPython.sln /p:Configuration=Debug 
+======================================================================
+Microsoft (R) Build Engine Version 4.0.30319.1
+[Microsoft .NET Framework, Version 4.0.30319.1]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+  Microsoft.Scripting -> V:\IronLanguages\bin\Debug\Microsoft.Scripting.dll
+  Microsoft.Scripting.Metadata -> V:\IronLanguages\bin\Debug\Microsoft.Scripting.Metadata.dll
+  Microsoft.Dynamic -> V:\IronLanguages\bin\Debug\Microsoft.Dynamic.dll
+  IronPython -> V:\IronLanguages\bin\Debug\IronPython.dll
+  IronPython.Modules -> V:\IronLanguages\bin\Debug\IronPython.Modules.dll
+  IronPython.Wpf -> V:\IronLanguages\bin\Debug\DLLs\IronPython.Wpf.dll
+  IronPythonConsole -> V:\IronLanguages\bin\Debug\ipy.exe
+  IronPythonTest -> V:\IronLanguages\bin\Debug\IronPythonTest.dll
+  IronPythonWindow -> V:\IronLanguages\bin\Debug\ipyw.exe
+  IronPythonConsoleAny -> V:\IronLanguages\bin\Debug\ipy64.exe
+  IronPythonWindowAny -> V:\IronLanguages\bin\Debug\ipyw64.exe
+  Microsoft.Scripting.AspNet -> V:\IronLanguages\bin\Debug\Microsoft.Scripting.AspNet.dll
+
+Task Smoke ...
+======================================================================
+ V:/IronLanguages/Util/IronRuby/bin/ir.exe V:/IronLanguages/Languages/Ruby/Tests/Scripts/unit_tests.rb
+======================================================================
+======================================================================
+ "V:/IronLanguages/bin/Debug/IronRuby.Tests.exe"  
+======================================================================
+Current culture: en-GB
+.> total time: 294ms
+....................................> see V:\Temp\RubyParser
+.....2: optimized = 12ms, universal = 17ms
+16: optimized = 7ms, universal = 18ms
+8: optimized = 8ms, universal = 19ms
+10: optimized = 27ms, universal = 27ms
+36: optimized = 3ms, universal = 3ms
+28: optimized = 2ms, universal = 2ms
+...........................................................................................................................................unknown:0: warning: already initialized constant C
+..unknown:0: warning: already initialized constant C
+..................................Assertion check skipped.
+[1, nil, [], 2, Proc, nil, nil]
+................................................................................................................................................Assertion check skipped.
+...........................................unknown:0: warning: already initialized constant N
+.....Assertion check skipped.
+.........................................................................................................................................................................................................................Assertion check skipped.
+"constant"
+"constant"
+"constant"
+"constant"
+"constant"
+[]
+..........................................................................................PASSED
+======================================================================
+ "V:/IronLanguages/bin/Debug/IronRuby.Tests.exe" /partial 
+======================================================================
+Running in partial trust
+Current culture: en-GB
+.> total time: 293ms
+.........................................2: optimized = 12ms, universal = 16ms
+16: optimized = 6ms, universal = 17ms
+8: optimized = 8ms, universal = 19ms
+10: optimized = 27ms, universal = 27ms
+36: optimized = 3ms, universal = 3ms
+28: optimized = 2ms, universal = 3ms
+...........................................................................................................................................unknown:0: warning: already initialized constant C
+..unknown:0: warning: already initialized constant C
+..................................Assertion check skipped.
+[1, nil, [], 2, Proc, nil, nil]
+................................................................................................................................................Assertion check skipped.
+...........................................unknown:0: warning: already initialized constant N
+.....Assertion check skipped.
+.........................................................................................................................................................................................................................Assertion check skipped.
+"constant"
+"constant"
+"constant"
+"constant"
+"constant"
+[]
+..........................................................................................PASSED
+======================================================================
+ "V:/IronLanguages/bin/Debug/IronRuby.Tests.exe" /noadaptive 
+======================================================================
+Current culture: en-GB
+.> total time: 216ms
+....................................> see V:\Temp\RubyParser
+.....2: optimized = 13ms, universal = 16ms
+16: optimized = 7ms, universal = 17ms
+8: optimized = 8ms, universal = 18ms
+10: optimized = 27ms, universal = 26ms
+36: optimized = 3ms, universal = 3ms
+28: optimized = 3ms, universal = 2ms
+...........................................................................................................................................unknown:0: warning: already initialized constant C
+..unknown:0: warning: already initialized constant C
+..................................Assertion check skipped.
+[1, nil, [], 2, Proc, nil, nil]
+................................................................................................................................................Assertion check skipped.
+...........................................unknown:0: warning: already initialized constant N
+.....Assertion check skipped.
+.........................................................................................................................................................................................................................Assertion check skipped.
+"constant"
+"constant"
+"constant"
+"constant"
+"constant"
+[]
+..........................................................................................PASSED
+======================================================================
+ "V:/IronLanguages/bin/Debug/IronRuby.Tests.exe" /partial /noadaptive 
+======================================================================
+Running in partial trust
+Current culture: en-GB
+.> total time: 216ms
+.........................................2: optimized = 12ms, universal = 16ms
+16: optimized = 6ms, universal = 17ms
+8: optimized = 8ms, universal = 18ms
+10: optimized = 27ms, universal = 26ms
+36: optimized = 3ms, universal = 3ms
+28: optimized = 3ms, universal = 3ms
+...........................................................................................................................................unknown:0: warning: already initialized constant C
+..unknown:0: warning: already initialized constant C
+..................................Assertion check skipped.
+[1, nil, [], 2, Proc, nil, nil]
+................................................................................................................................................Assertion check skipped.
+...........................................unknown:0: warning: already initialized constant N
+.....Assertion check skipped.
+.........................................................................................................................................................................................................................Assertion check skipped.
+"constant"
+"constant"
+"constant"
+"constant"
+"constant"
+[]
+..........................................................................................PASSED
+======================================================================
+ "V:/IronLanguages/bin/Debug/IronRuby.Tests.exe" /sync0 
+======================================================================
+Current culture: en-GB
+.> total time: 295ms
+....................................> see V:\Temp\RubyParser
+.....2: optimized = 12ms, universal = 17ms
+16: optimized = 7ms, universal = 17ms
+8: optimized = 8ms, universal = 19ms
+10: optimized = 27ms, universal = 27ms
+36: optimized = 3ms, universal = 3ms
+28: optimized = 2ms, universal = 2ms
+...........................................................................................................................................unknown:0: warning: already initialized constant C
+..unknown:0: warning: already initialized constant C
+..................................Assertion check skipped.
+[1, nil, [], 2, Proc, nil, nil]
+................................................................................................................................................Assertion check skipped.
+...........................................unknown:0: warning: already initialized constant N
+.....Assertion check skipped.
+.........................................................................................................................................................................................................................Assertion check skipped.
+"constant"
+"constant"
+"constant"
+"constant"
+"constant"
+[]
+..........................................................................................PASSED
+======================================================================
+ "V:/IronLanguages/bin/Debug/IronRuby.Tests.exe" /sync1 
+======================================================================
+Current culture: en-GB
+.> total time: 296ms
+....................................> see V:\Temp\RubyParser
+.....2: optimized = 12ms, universal = 16ms
+16: optimized = 7ms, universal = 17ms
+8: optimized = 8ms, universal = 18ms
+10: optimized = 27ms, universal = 26ms
+36: optimized = 3ms, universal = 3ms
+28: optimized = 3ms, universal = 3ms
+...........................................................................................................................................unknown:0: warning: already initialized constant C
+..unknown:0: warning: already initialized constant C
+..................................Assertion check skipped.
+[1, nil, [], 2, Proc, nil, nil]
+................................................................................................................................................Assertion check skipped.
+...........................................unknown:0: warning: already initialized constant N
+.....Assertion check skipped.
+.........................................................................................................................................................................................................................Assertion check skipped.
+"constant"
+"constant"
+"constant"
+"constant"
+"constant"
+[]
+..........................................................................................PASSED
+======================================================================
+ "V:/IronLanguages/bin/Debug/IronRuby.Tests.exe" /debug 
+======================================================================
+Current culture: en-GB
+.> total time: 336ms
+....................................> see V:\Temp\RubyParser
+.....2: optimized = 12ms, universal = 16ms
+16: optimized = 6ms, universal = 17ms
+8: optimized = 8ms, universal = 18ms
+10: optimized = 27ms, universal = 27ms
+36: optimized = 3ms, universal = 3ms
+28: optimized = 2ms, universal = 2ms
+...........................................................................................................................................unknown:0: warning: already initialized constant C
+..unknown:0: warning: already initialized constant C
+..................................Assertion check skipped.
+[1, nil, [], 2, Proc, nil, nil]
+................................................................................................................................................Assertion check skipped.
+...........................................unknown:0: warning: already initialized constant N
+.....Assertion check skipped.
+.........................................................................................................................................................................................................................Assertion check skipped.
+"constant"
+"constant"
+"constant"
+"constant"
+"constant"
+[]
+..........................................................................................PASSED
+======================================================================
+ "V:/IronLanguages/bin/Debug/IronRuby.Tests.exe" /partial /debug 
+======================================================================
+Running in partial trust
+Current culture: en-GB
+.> total time: 229ms
+.........................................2: optimized = 12ms, universal = 16ms
+16: optimized = 6ms, universal = 17ms
+8: optimized = 8ms, universal = 18ms
+10: optimized = 27ms, universal = 27ms
+36: optimized = 3ms, universal = 3ms
+28: optimized = 3ms, universal = 3ms
+...........................................................................................................................................unknown:0: warning: already initialized constant C
+..unknown:0: warning: already initialized constant C
+..................................Assertion check skipped.
+[1, nil, [], 2, Proc, nil, nil]
+................................................................................................................................................Assertion check skipped.
+...........................................unknown:0: warning: already initialized constant N
+.....Assertion check skipped.
+.........................................................................................................................................................................................................................Assertion check skipped.
+"constant"
+"constant"
+"constant"
+"constant"
+"constant"
+[]
+..........................................................................................PASSED
+PASSED
+
+PASSED in 4:23.7.
+
+Task RubySpec_A ...
+======================================================================
+ V:/IronLanguages/Util/IronRuby/bin/ir.exe V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec ci -fd :lang :cli :netinterop :cominterop :thread :netcli
+======================================================================
+IronRuby 1.1.3.0 on .NET 4.0.30319.1
+.....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+
+Finished in 74.175243 seconds
+
+107 files, 1164 examples, 3055 expectations, 0 failures, 0 errors
+
+-----------------------------------------------------
+The rubyspec temp directory is not empty. 
+Ensure that all specs are cleaning up temporary files.
+Drectory: V:/IronLanguages/Languages/Ruby/rubyspec_temp 
+-----------------------------------------------------
+
+
+PASSED in 1:19.7.
+
+Task RubySpec_B ...
+======================================================================
+ V:/IronLanguages/Util/IronRuby/bin/ir.exe V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec ci -fd :core1 :lib1
+======================================================================
+IronRuby 1.1.3.0 on .NET 4.0.30319.1
+..FF............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................F......F.........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+
+1)
+ARGF.binmode puts reading into binmode FAILED
+Expected "test\n"
+ to equal "test\r\n"
+
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/expectations/expectations.rb:15:in `fail_with'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/matchers/base.rb:8:in `=='
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/argf/binmode_spec.rb:24
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/helpers/argv.rb:38:in `argv'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/argf/binmode_spec.rb:22
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:67:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:67:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `all?'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:177:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:36:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/object.rb:11:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/argf/binmode_spec.rb:3
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `load'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:67:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:67:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:41:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/commands/mspec-ci.rb:73:in `run'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/utils/script.rb:232:in `main'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec-ci:8
+
+2)
+ARGF.binmode puts alls subsequent stream reading through ARGF into binmode FAILED
+Expected "test\n"
+ to equal "test\r\n"
+
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/expectations/expectations.rb:15:in `fail_with'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/matchers/base.rb:8:in `=='
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/argf/binmode_spec.rb:31
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/helpers/argv.rb:38:in `argv'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/argf/binmode_spec.rb:29
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:67:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:67:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `all?'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:177:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:36:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/object.rb:11:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/argf/binmode_spec.rb:3
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `load'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:67:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:67:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:41:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/commands/mspec-ci.rb:73:in `run'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/utils/script.rb:232:in `main'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec-ci:8
+
+3)
+File#chmod maps to Windows file attribute FAILED
+Expected "A       I    V:\\IronLanguages\\Languages\\Ruby\\rubyspec_temp\\i_exist\n"
+to match /^A            /
+
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/expectations/expectations.rb:15:in `fail_with'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/matchers/base.rb:41:in `=~'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/file/chmod_spec.rb:48
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `all?'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:29:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/object.rb:10:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/file/chmod_spec.rb:3
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `load'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:41:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/commands/mspec-ci.rb:73:in `run'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/utils/script.rb:232:in `main'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec-ci:8
+
+4)
+File.chmod maps to Windows file attribute FAILED
+Expected "A       I    V:\\IronLanguages\\Languages\\Ruby\\rubyspec_temp\\i_exist\n"
+to match /^A            /
+
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/expectations/expectations.rb:15:in `fail_with'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/matchers/base.rb:41:in `=~'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/file/chmod_spec.rb:166
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `all?'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:29:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/object.rb:10:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/core/file/chmod_spec.rb:104
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `load'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:41:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/commands/mspec-ci.rb:73:in `run'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/utils/script.rb:232:in `main'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec-ci:8
+
+Finished in 129.046381 seconds
+
+1533 files, 4500 examples, 18257 expectations, 4 failures, 0 errors
+
+-----------------------------------------------------
+The rubyspec temp directory is not empty. 
+Ensure that all specs are cleaning up temporary files.
+Drectory: V:/IronLanguages/Languages/Ruby/rubyspec_temp 
+-----------------------------------------------------
+
+
+FAILED in 2:13.0.
+
+Task RubySpec_C ...
+======================================================================
+ V:/IronLanguages/Util/IronRuby/bin/ir.exe V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec ci -fd :core2 :lib2
+======================================================================
+IronRuby 1.1.3.0 on .NET 4.0.30319.1
+...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................E........................E......E............E.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+
+1)
+Socket::IPSocket#getaddress returns the IP address of hostname ERROR
+NoMethodError: undefined method `[]' for nil:NilClass
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/library/socket/ipsocket/getaddress_spec.rb:7
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `all?'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:29:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/object.rb:10:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/library/socket/ipsocket/getaddress_spec.rb:4
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `load'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:41:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/commands/mspec-ci.rb:73:in `run'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/utils/script.rb:232:in `main'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec-ci:8
+
+2)
+TCPServer.new binds to localhost and a port with either IPv4 or IPv6 ERROR
+NoMethodError: undefined method `[]' for nil:NilClass
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/library/socket/tcpserver/new_spec.rb:26
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `all?'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:29:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/object.rb:10:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/library/socket/tcpserver/new_spec.rb:4
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `load'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:41:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/commands/mspec-ci.rb:73:in `run'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/utils/script.rb:232:in `main'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec-ci:8
+
+3)
+TCPSocket#gethostbyname returns the IP address as the fourth value ERROR
+NoMethodError: undefined method `[]' for nil:NilClass
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/library/socket/tcpsocket/gethostbyname_spec.rb:42
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `all?'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:29:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/object.rb:10:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/library/socket/tcpsocket/gethostbyname_spec.rb:5
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `load'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:41:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/commands/mspec-ci.rb:73:in `run'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/utils/script.rb:232:in `main'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec-ci:8
+
+4)
+UDPSocket.bind receives a hostname and a port ERROR
+NoMethodError: undefined method `[]' for nil:NilClass
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/library/socket/udpsocket/bind_spec.rb:25
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:149:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `all?'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:147:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:169:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/context.rb:161:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:29:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/object.rb:10:in `describe'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/rubyspec/library/socket/udpsocket/bind_spec.rb:4
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `load'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:55:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `instance_eval'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:65:in `protect'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `each'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:49:in `files'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/runner/mspec.rb:41:in `process'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/commands/mspec-ci.rb:73:in `run'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/lib/mspec/utils/script.rb:232:in `main'
+V:/IronLanguages/Languages/Ruby/Tests/mspec/mspec/bin/mspec-ci:8
+
+Finished in 78.776506 seconds
+
+1270 files, 4370 examples, 17676 expectations, 0 failures, 4 errors
+
+-----------------------------------------------------
+The rubyspec temp directory is not empty. 
+Ensure that all specs are cleaning up temporary files.
+Drectory: V:/IronLanguages/Languages/Ruby/rubyspec_temp 
+-----------------------------------------------------
+
+
+FAILED in 1:23.6.
+
+Task RubyGems ...
+======================================================================
+ V:/IronLanguages/bin/Debug/ir.exe  V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr.rb gem
+======================================================================
+Disabled 39 tests
+Loaded suite V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr
+Started
+.................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 159.122101 seconds.
+
+705 tests, 2298 assertions, 0 failures, 0 errors, 0 skips
+
+Test run options: --seed 18650
+
+PASSED in 2:52.6.
+
+Task TZInfo ...
+======================================================================
+ V:/IronLanguages/bin/Debug/ir.exe  V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr.rb tzinfo
+======================================================================
+Disabled 0 tests
+Loaded suite V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr
+Started
+.....................................................................................................................................................................................................................................................................
+Finished in 3.596205 seconds.
+
+261 tests, 2329 assertions, 0 failures, 0 errors, 0 skips
+
+Test run options: --seed 44990
+
+PASSED in 0:9.4.
+
+Task Rake ...
+======================================================================
+ V:/IronLanguages/bin/Debug/ir.exe  V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr.rb rake
+======================================================================
+Disabled 18 tests
+Loaded suite V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr
+Started
+................................................................................................................................................................................................................................................................................................................................................
+Finished in 7.769444 seconds.
+
+336 tests, 881 assertions, 0 failures, 0 errors, 0 skips
+
+Test run options: --seed 45394
+
+PASSED in 0:13.9.
+
+Task Yaml ...
+======================================================================
+ V:/IronLanguages/bin/Debug/ir.exe -v V:/IronLanguages/Languages/Ruby/Tests/Libraries/Yaml/yaml_test_suite.rb
+======================================================================
+IronRuby 1.1.3.0 on .NET 4.0.30319.1
+Loaded suite V:/IronLanguages/Languages/Ruby/Tests/Libraries/Yaml/yaml_test_suite
+Started
+..............................................................................................
+Finished in 0.616035 seconds.
+
+94 tests, 278 assertions, 0 failures, 0 errors, 0 skips
+
+Test run options: --seed 37914
+
+PASSED in 0:3.6.
+
+Task BuildSilverlight ...
+======================================================================
+msbuild /verbosity:minimal V:/IronLanguages/Solutions/Ruby.sln /p:Configuration=Silverlight4Debug 
+======================================================================
+Microsoft (R) Build Engine Version 4.0.30319.1
+[Microsoft .NET Framework, Version 4.0.30319.1]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+  Microsoft.Scripting -> V:\IronLanguages\bin\Silverlight4Debug\Microsoft.Scripting.dll
+  Microsoft.Dynamic -> V:\IronLanguages\bin\Silverlight4Debug\Microsoft.Dynamic.dll
+  Ruby -> V:\IronLanguages\bin\Silverlight4Debug\IronRuby.dll
+  IronRuby.Libraries -> V:\IronLanguages\bin\Silverlight4Debug\IronRuby.Libraries.dll
+  IronRuby.Libraries.Yaml -> V:\IronLanguages\bin\Silverlight4Debug\IronRuby.Libraries.Yaml.dll
+  Microsoft.Scripting.Silverlight -> V:\IronLanguages\bin\Silverlight4Debug\Microsoft.Scripting.Silverlight.dll
+  Chiron -> V:\IronLanguages\bin\Silverlight4Debug\Chiron.exe
+
+PASSED in 0:1.7.
+
+Task ActionMailer ...
+======================================================================
+ V:/IronLanguages/bin/Debug/ir.exe  V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr.rb action_mailer
+======================================================================
+WARNING: YAML.add_builtin_type is not implemented
+Disabled 10 tests
+Loaded suite V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr
+Started
+...............................................................................
+...............................................................................
+...........................
+
+Finished in 64.022661 seconds.
+
+185 tests, 468 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+46.4865% passed
+
+PASSED in 1:30.1.
+
+Task ActiveSupport ...
+======================================================================
+ V:/IronLanguages/bin/Debug/ir.exe  V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr.rb active_support
+======================================================================
+Skipping memcached backed store tests. Start memcached and try again.
+WARNING: YAML.add_builtin_type is not implemented
+Isolation tests can test test-unit 1 only
+Skipping MessageEncryptor test: broken OpenSSL install
+Skipping MessageVerifier test: broken OpenSSL install
+Could not undef FileStoreTest#test_read_multi
+Could not undef FileStoreTest#test_really_long_keys
+Could not undef FileStoreTest#test_should_overwrite
+Disabled 194 tests
+Loaded suite V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr
+Started
+................................................N..............................
+...............................................................................
+.........................................................unknown:0: warning: `UTC' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+..unknown:0: warning: `UTC' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.......unknown:0: warning: `US/Central' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+...unknown:0: warning: `UTC' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+..........
+............unknown:0: warning: `UTC' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+........unknown:0: warning: `UTC' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `UTC' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+..unknown:0: warning: `UTC' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.....unknown:0: warning: `UTC' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+...................................................
+...............................................................................
+..............unknown:0: warning: `CET' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.........unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+........................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+..........................................unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+..........unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+....unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+............unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+unknown:0: warning: `NZ' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+..
+..................unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+.............................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+.....................unknown:0: warning: `US/Eastern' is not a valid time zone specification; using the current time zone `GMT Standard Time'
+..........................................................
+...............................................................................
+.............................................
+
+  1) Notification: ArrayUniqByTests#default_test was redefined
+default_test(ArrayUniqByTests)
+V:/IronLanguages/External.LCA_RESTRICTED/Languages/Ruby/ruby19/lib/ruby/gems/1.9.1/gems/mocha-0.9.8/lib/mocha/integration/test_unit/gem_version_201_and_above.rb:12:in `run'
+
+Finished in 50.88291 seconds.
+
+1861 tests, 8160 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 1 notifications
+78.9898% passed
+
+PASSED in 1:13.9.
+
+Task ActiveRecord ...
+======================================================================
+ V:/IronLanguages/bin/Debug/ir.exe  V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr.rb active_record
+======================================================================
+WARNING: YAML.add_builtin_type is not implemented
+With enabled unicode string types
+  * DEFERRED: For abstract behavior with different language should do a date insertion when language is german. 
+Disabled 101 tests
+Loaded suite V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr
+Started
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+.............
+
+Finished in 746.774713 seconds.
+
+2383 tests, 7401 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+
+PASSED in 13:26.4.
+
+Task ActiveResource ...
+======================================================================
+ V:/IronLanguages/bin/Debug/ir.exe  V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr.rb active_resource
+======================================================================
+WARNING: YAML.add_builtin_type is not implemented
+Disabled 136 tests
+Loaded suite V:/IronLanguages/Languages/Ruby/Tests/Scripts/utr
+Started
+......................N...............N...........................N............
+................................N............................
+
+  1) Notification: BaseErrorsTest#default_test was redefined
+default_test(BaseErrorsTest)
+V:/IronLanguages/External.LCA_RESTRICTED/Languages/Ruby/ruby19/lib/ruby/gems/1.9.1/gems/mocha-0.9.8/lib/mocha/integration/test_unit/gem_version_201_and_above.rb:20:in `run'
+
+  2) Notification: BaseTest#default_test was redefined
+default_test(BaseTest)
+V:/IronLanguages/External.LCA_RESTRICTED/Languages/Ruby/ruby19/lib/ruby/gems/1.9.1/gems/mocha-0.9.8/lib/mocha/integration/test_unit/gem_version_201_and_above.rb:12:in `run'
+
+  3) Notification: CustomMethodsTest#default_test was redefined
+default_test(CustomMethodsTest)
+V:/IronLanguages/External.LCA_RESTRICTED/Languages/Ruby/ruby19/lib/ruby/gems/1.9.1/gems/mocha-0.9.8/lib/mocha/integration/test_unit/gem_version_201_and_above.rb:12:in `run'
+
+  4) Notification: ObservingTest#default_test was redefined
+default_test(ObservingTest)
+V:/IronLanguages/External.LCA_RESTRICTED/Languages/Ruby/ruby19/lib/ruby/gems/1.9.1/gems/mocha-0.9.8/lib/mocha/integration/test_unit/gem_version_201_and_above.rb:12:in `run'
+
+Finished in 7.266416 seconds.
+
+136 tests, 329 assertions, 0 failures, 0 errors, 0 pendings, 0 omissions, 4 notifications
+54.4118% passed
+
+PASSED in 0:20.4.
+
+======================================================================
+FAILED:
+  RubySpec_B
+  RubySpec_C

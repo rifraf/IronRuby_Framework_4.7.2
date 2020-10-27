@@ -1,0 +1,31 @@
+Trying rtpc...
+Connected to rtpc.
+ETAS LABCAR-RTPC - V105.1.0-DEV
+rtpc login: labcar
+Welcome to ETAS LABCAR-RTPC
+labcar@rtpc:~$ mkdir -p ~/rta-os/IronLanguages/Languages/Ruby
+labcar@rtpc:~$ TERM=dumb bash
+labcar@rtpc:~$ cd ~/rta-os/IronLanguages/Languages/Ruby
+labcar@rtpc:~/rta-os/IronLanguages/Languages/Ruby$ echo ExitStatus=[$?]
+ExitStatus=[0]
+labcar@rtpc:~/rta-os/IronLanguages/Languages/Ruby$ ls -l
+total 0
+labcar@rtpc:~/rta-os/IronLanguages/Languages/Ruby$ echo ExitStatus=[$?]
+ExitStatus=[0]
+labcar@rtpc:~/rta-os/IronLanguages/Languages/Ruby$ Trying rtpc...
+Connected to rtpc.
+ETAS LABCAR-RTPC - V105.1.0-DEV
+rtpc login: labcar
+Last login: Sun May  1 17:52:41 UTC 2011 from host-pc on pts/0
+Welcome to ETAS LABCAR-RTPC
+labcar@rtpc:~$ mkdir -p ~/rta-os/IronLanguages/Languages/Ruby
+labcar@rtpc:~$ TERM=dumb bash
+labcar@rtpc:~$ cd ~/rta-os/IronLanguages/Languages/Ruby
+labcar@rtpc:~/rta-os/IronLanguages/Languages/Ruby$ echo ExitStatus=[$?]
+ExitStatus=[0]
+labcar@rtpc:~/rta-os/IronLanguages/Languages/Ruby$ ls -l ..
+total 0
+drwxr-xr-x 2 labcar users 48 May  1 17:52 Ruby
+labcar@rtpc:~/rta-os/IronLanguages/Languages/Ruby$ echo ExitStatus=[$?]
+ExitStatus=[0]
+labcar@rtpc:~/rta-os/IronLanguages/Languages/Ruby$ 
